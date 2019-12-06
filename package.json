@@ -12,7 +12,9 @@
     "nodemon": "^1.17.2"
   },
   "scripts": {
-    "start": "nodemon server.js" 
+    "start": "nodemon server.js",
+      "build": "gatsby build",
+      "dev": "gatsby develop"
   },
   "author": "Lambda School",
   "license": "ISC"
