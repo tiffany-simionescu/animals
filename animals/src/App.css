@@ -41,6 +41,7 @@ img {
   text-decoration: none;
   color: #282c34;
   font-size: 80%;
+  font-weight: bold;
 }
 
 .link:hover {
