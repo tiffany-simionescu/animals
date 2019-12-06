@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "name": "animals",
+  "builds": [
+    { "src": "animals/package.json", 
+      "use": "@now/static-build", 
+      "config": {"distDir": "build"} 
+    }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "animals/$1" }
+  ]
+}
