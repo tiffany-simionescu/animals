@@ -4,13 +4,6 @@
 
 .App-logo {
   height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -25,14 +18,62 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #09d3ac;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  max-width: 800px;
+  max-height: 500px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 8px;
+  width: 100%;
+  position: fixed;
+   top: 0px;
+}
+
+.link {
+  margin: auto 50px;
+  text-decoration: none;
+  color: #282c34;
+  font-size: 80%;
+}
+
+.link:hover {
+  color: red;
+}
+
+button {
+	box-shadow:inset 0px -3px 7px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:3px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:15px;
+	padding:9px 23px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #810e05;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+button:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+
+button:active {
+	position:relative;
+	top:1px;
+}
+
+h1 {
+  margin-top: 50px;
 }
