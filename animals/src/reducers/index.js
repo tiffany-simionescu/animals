@@ -7,7 +7,7 @@ import {
   FETCH_DOG_IMAGE_FAIL,
   FETCH_FOX_IMAGE_START,
   FETCH_FOX_IMAGE_SUCCESS,
-  FETCH_FOX_IMAGE_FAIL
+  FETCH_FOX_IMAGE_FAIL,
 } from '../actions';
 
 const initialState = {
@@ -77,7 +77,7 @@ export const reducer = (state = initialState, action) => {
         error: action.payload,
         isFetching: false
       }
-    default:
-      return state;
+      default:
+        return state;
   }
 }

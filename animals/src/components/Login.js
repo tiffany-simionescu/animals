@@ -34,7 +34,7 @@ class Login extends React.Component {
       .post('/login', this.state.credentials)
       .then(res => {
         localStorage.setItem('token', res.data.payload);
-        this.props.history.push('/fox-image');
+        this.props.history.push('/cat-image');
         this.setState({...this.state, isLoggedIn: true});
       })
       .catch(err => console.log(err))

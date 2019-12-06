@@ -9,6 +9,7 @@ const Nav = () => {
       <Link to="/dog-image" className="link">Dog</Link>
       <Link to="/fox-image" className="link">Fox</Link>
       <Link to="/login" className="link">Log in</Link>
+      <Link to="/login" className="link" onClick={() => localStorage.clear()}>Log out</Link>
     </div>
   )
 }
